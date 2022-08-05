@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ComparImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lk1-kL-IUT">
+                                <rect key="frame" x="8" y="8" width="398" height="720"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9Im-Ed-iq2">
+                                        <rect key="frame" x="49" y="0.0" width="300" height="670"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ComparImage Illu NB" translatesAutoresizingMaskIntoConstraints="NO" id="NsO-x0-zEf">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="331"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ComparImage Illu Color" translatesAutoresizingMaskIntoConstraints="NO" id="L6A-vJ-q5V">
+                                                <rect key="frame" x="0.0" y="339" width="300" height="331"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="L6A-vJ-q5V" firstAttribute="width" secondItem="NsO-x0-zEf" secondAttribute="width" id="Xh4-IZ-csj"/>
+                                            <constraint firstItem="L6A-vJ-q5V" firstAttribute="height" secondItem="NsO-x0-zEf" secondAttribute="height" id="qxc-HE-HhJ"/>
+                                        </constraints>
+                                        <variation key="widthClass=regular" axis="horizontal"/>
+                                        <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rX0-Fz-wTO">
+                                        <rect key="frame" x="86.666666666666686" y="678" width="225" height="42"/>
+                                        <color key="backgroundColor" red="0.34241300819999998" green="0.41808691619999999" blue="0.50959968570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="Z2Y-Ww-AAn"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="rSq-bj-84X"/>
+                                        </constraints>
+                                        <state key="normal" title="Nouvelles images">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bIM-Ce-H6y"/>
+                        <color key="backgroundColor" red="0.74834197759999999" green="0.76838296650000004" blue="0.78915339709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lk1-kL-IUT" firstAttribute="top" secondItem="bIM-Ce-H6y" secondAttribute="top" constant="8" id="ZA6-EW-dvw"/>
+                            <constraint firstItem="bIM-Ce-H6y" firstAttribute="trailing" secondItem="lk1-kL-IUT" secondAttribute="trailing" constant="8" id="ebK-bM-jMG"/>
+                            <constraint firstItem="lk1-kL-IUT" firstAttribute="leading" secondItem="bIM-Ce-H6y" secondAttribute="leading" constant="8" id="phN-s6-gaa"/>
+                            <constraint firstItem="bIM-Ce-H6y" firstAttribute="bottom" secondItem="lk1-kL-IUT" secondAttribute="bottom" constant="8" id="tbj-8c-1ZX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="136.25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ComparImage Illu Color" width="300" height="300"/>
+        <image name="ComparImage Illu NB" width="300" height="300"/>
+    </resources>
+</document>
